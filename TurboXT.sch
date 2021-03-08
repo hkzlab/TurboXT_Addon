@@ -989,10 +989,6 @@ NoConn ~ 5900 3800
 NoConn ~ 5900 4300
 NoConn ~ 5900 4800
 Wire Wire Line
-	5300 2800 5050 2800
-Wire Wire Line
-	5050 2800 5050 3300
-Wire Wire Line
 	5050 4800 5300 4800
 Wire Wire Line
 	5300 4300 5050 4300
@@ -1006,7 +1002,6 @@ Wire Wire Line
 	5050 3800 5050 4300
 Wire Wire Line
 	5300 3300 5050 3300
-Connection ~ 5050 3300
 Wire Wire Line
 	5050 3300 5050 3800
 $Comp
