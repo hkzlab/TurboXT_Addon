@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "TurboXT"
 Date ""
-Rev "0.1"
+Rev "1.1"
 Comp ""
 Comment1 "Copyright (c) 2014 Sergey Kiselev"
 Comment2 "Modified (c) 2019 Inmbolmie"
@@ -1117,4 +1117,8 @@ Wire Wire Line
 	3250 2500 4000 2500
 Text Notes 2900 750  0    50   ~ 0
 The HRQDMA and DMAWAIT signals are\nused to disable the TURBO when DMA is\ndetected.
+Text Notes 6500 4400 0    100  ~ 0
+This board will generate a clock at 1/3\nof  X1's frequency.\n\nIf the DMAWAIT and the HRQDMA signals\nare connected, they will be used to disable\nthe TURBO and revert to original clock\nwhile DMA is in progress.\n\nInstalling an 24Mhz oscillator will provide an\n8Mhz clock.
+Text Notes 2050 1600 0    50   ~ 0
+- HRQDMA -> Pin 10 of U28 (8237 DMA)\n- DMAWAIT -> Pin 7 of U88 (74LS175)
 $EndSCHEMATC
