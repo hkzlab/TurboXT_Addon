@@ -1115,4 +1115,6 @@ Wire Wire Line
 	3250 2000 4300 2000
 Wire Wire Line
 	3250 2500 4000 2500
+Text Notes 2900 750  0    50   ~ 0
+The HRQDMA and DMAWAIT signals are\nused to disable the TURBO when DMA is\ndetected.
 $EndSCHEMATC
