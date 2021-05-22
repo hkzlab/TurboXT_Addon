@@ -1121,4 +1121,6 @@ Text Notes 6500 4400 0    100  ~ 0
 This board will generate a clock at 1/3\nof  X1's frequency.\n\nIf the DMAWAIT and the HRQDMA signals\nare connected, they will be used to disable\nthe TURBO and revert to original clock\nwhile DMA is in progress.\n\nInstalling an 24Mhz oscillator will provide an\n8Mhz clock.
 Text Notes 2050 1600 0    50   ~ 0
 - HRQDMA -> Pin 10 of U28 (8237 DMA)\n- DMAWAIT -> Pin 7 of U88 (74LS175)
+Text Notes 4050 7300 0    50   ~ 0
+Please note that some 8284 (CMOS?) do not drive the\nOSC output when F/C signal is high.\nThe real 8284 drives OSC always from the crystal input\nfrequency regardless of the F/C signal state.
 $EndSCHEMATC
