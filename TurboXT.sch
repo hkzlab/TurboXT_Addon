@@ -1155,7 +1155,7 @@ $EndComp
 Wire Wire Line
 	6350 6500 6500 6500
 Wire Wire Line
-	6500 6500 6500 6300
+	6500 6500 6500 6450
 $Comp
 L power:GND #PWR?
 U 1 1 60B7B2DF
@@ -1176,5 +1176,26 @@ Wire Wire Line
 Wire Wire Line
 	6350 6600 6500 6600
 Wire Wire Line
-	6500 6600 6500 6700
+	6500 6600 6500 6650
+$Comp
+L Device:C_Small C9
+U 1 1 60B18C33
+P 6600 6550
+F 0 "C9" H 6692 6596 50  0000 L CNN
+F 1 "100nF" H 6692 6505 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm" H 6600 6550 50  0001 C CNN
+F 3 "~" H 6600 6550 50  0001 C CNN
+	1    6600 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 6650 6500 6650
+Connection ~ 6500 6650
+Wire Wire Line
+	6500 6650 6500 6700
+Wire Wire Line
+	6600 6450 6500 6450
+Connection ~ 6500 6450
+Wire Wire Line
+	6500 6450 6500 6300
 $EndSCHEMATC
