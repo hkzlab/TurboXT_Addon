@@ -185,10 +185,6 @@ Wire Wire Line
 	5750 5900 6200 5900
 Wire Wire Line
 	5750 6200 6200 6200
-Wire Wire Line
-	5750 6300 6200 6300
-Wire Wire Line
-	5750 6400 6200 6400
 Text Label 4850 5600 0    50   ~ 0
 CSYNC
 Text Label 4850 5700 0    50   ~ 0
@@ -207,7 +203,7 @@ Text Label 4850 6300 0    50   ~ 0
 CLK
 Text Label 6200 6400 2    50   ~ 0
 RESET
-Text Label 6200 6300 2    50   ~ 0
+Text Label 6500 6300 2    50   ~ 0
 ~RES
 Text Label 6200 6200 2    50   ~ 0
 OSC
@@ -1134,4 +1130,51 @@ Wire Wire Line
 	2900 4200 2900 4250
 Text Label 2500 4200 0    50   ~ 0
 RESET
+$Comp
+L Device:R_Small R4
+U 1 1 60B40AA8
+P 6100 6300
+F 0 "R4" V 6150 6400 50  0000 L CNN
+F 1 "10k" V 6150 6050 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 6100 6300 50  0001 C CNN
+F 3 "~" H 6100 6300 50  0001 C CNN
+	1    6100 6300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J7
+U 1 1 60B71C6D
+P 6150 6600
+F 0 "J7" H 6230 6592 50  0000 L CNN
+F 1 "Reset" H 6230 6501 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6150 6600 50  0001 C CNN
+F 3 "~" H 6150 6600 50  0001 C CNN
+	1    6150 6600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6350 6500 6500 6500
+Wire Wire Line
+	6500 6500 6500 6300
+$Comp
+L power:GND #PWR?
+U 1 1 60B7B2DF
+P 6500 6700
+F 0 "#PWR?" H 6500 6450 50  0001 C CNN
+F 1 "GND" H 6505 6527 50  0000 C CNN
+F 2 "" H 6500 6700 50  0001 C CNN
+F 3 "" H 6500 6700 50  0001 C CNN
+	1    6500 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 6400 6200 6400
+Wire Wire Line
+	6000 6300 5750 6300
+Wire Wire Line
+	6200 6300 6500 6300
+Wire Wire Line
+	6350 6600 6500 6600
+Wire Wire Line
+	6500 6600 6500 6700
 $EndSCHEMATC
