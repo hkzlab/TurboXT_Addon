@@ -1,6 +1,6 @@
 # Installation
 
-- HRQDMA from pin 10 of the 8237 DMA controller (U28)
+- HRQDMA from pin 10 of the 8237 DMA controller (U28) or pin 5 of U57 (74LS20)
 - DMAWAIT from pin 7 of a 74LS175 flipflop (U88)
 
 # Credits
