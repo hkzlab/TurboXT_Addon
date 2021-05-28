@@ -750,8 +750,6 @@ OSC
 Wire Wire Line
 	2950 3950 2500 3950
 NoConn ~ 2950 3850
-NoConn ~ 2950 4250
-NoConn ~ 2950 4150
 NoConn ~ 3950 4050
 NoConn ~ 3950 3950
 NoConn ~ 3950 3850
@@ -1123,4 +1121,17 @@ Text Notes 2050 1600 0    50   ~ 0
 - HRQDMA -> Pin 10 of U28 (8237 DMA)\n- DMAWAIT -> Pin 7 of U88 (74LS175)
 Text Notes 4050 7300 0    50   ~ 0
 Please note that some 8284 (CMOS?) do not drive the\nOSC output when F/C signal is high.\nThe real 8284 drives OSC always from the crystal input\nfrequency regardless of the F/C signal state.
+Wire Wire Line
+	2950 4150 2900 4150
+Wire Wire Line
+	2900 4150 2900 4200
+Wire Wire Line
+	2900 4250 2950 4250
+Wire Wire Line
+	2900 4200 2500 4200
+Connection ~ 2900 4200
+Wire Wire Line
+	2900 4200 2900 4250
+Text Label 2500 4200 0    50   ~ 0
+RESET
 $EndSCHEMATC
