@@ -258,7 +258,7 @@
     (fp_text reference U7 (at -2.667 0.127) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 74LS14 (at 3.683 7.493 270) (layer F.SilkS)
+    (fp_text value 74HCT14 (at 3.683 7.493 270) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 9.1 -1.55) (end -1.45 -1.55) (layer F.CrtYd) (width 0.05))
