@@ -22,11 +22,14 @@ Usually, an additional socket is added to the bottom headers to gain some vertic
 
 The TurboXT then has 4 additional labeled connections to make on the motherboard via wire.
 
+### DMA
 
 These connections are required to automatically disable turbo during DMA:
 
 - HRQDMA from pin 10 of the 8237 DMA controller (U28) or pin 5 of U57 (74LS20)
 - DMAWAIT from pin 7 of a 74LS175 flipflop (U88)
+
+### Power
 
 These are optional but highly recommended to provide an additional source of power beside the 8284 socket:
 
@@ -42,11 +45,28 @@ there are two empty resistor footprints on my board that were perfect for the co
 
 # Known issues and caveats 
 
+- The original 8088 is rated 5Mhz. Replace it with at least an 8Mhz rated variant.
 - The board sits on top of (but should not make contact with) the 8088 and 8087. These can get hot, add a fan or something to keep them cooler.
 - Some CMOS variants of the 8284 do not drive the OSC signal when the F/C pin is high. This is required for this board to work. I tested mine with the original Intel 8284.
 - The components on top of the board could cause some clearance issues with cards installed in slot 8. Some redesigning is required to address this.
+- You can try other oscillators in place of the 24Mhz one. Remember that the resulting frequency will be divided by 3.
 
 ## Bill of Materials
+
+- C1:	10uF/25v electrolitic cap
+- C2-9: 8x 100nF ceramic caps
+- R1, R2, R4: 3x 10k resistors
+- R3: 470ohm resistors
+- U2: 74LS92
+- U3: 74LS74
+- U4: 74LS02
+- U5: 74LS00
+- U7: 74HCT14
+- X1: 24Mhz oscillator (The board divides this frequency by 3)
+- 18pin socket for 8284
+- 18pin turned header strip
+- 18pin socket as a spacer between motherboard and addon
+- Snapped pin headers for connectors on the board
 
 # Credits
 
