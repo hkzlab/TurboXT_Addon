@@ -29,6 +29,8 @@ These connections are required to automatically disable turbo during DMA:
 - HRQDMA from pin 10 of the 8237 DMA controller (U28) or pin 5 of U57 (74LS20)
 - DMAWAIT from pin 7 of a 74LS175 flipflop (U88)
 
+Note that these two connections actually end up feeding into the same NAND gate, you can mix them up and no issue will arise.
+
 ### Power
 
 These are optional but highly recommended to provide an additional source of power beside the 8284 socket:
