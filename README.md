@@ -1,4 +1,4 @@
-# TurboXT Addon for the IBM XT (5160)
+# Turbo / Reset addon board for the IBM XT (5160)
 
 ## Introduction
 
