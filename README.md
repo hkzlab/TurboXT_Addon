@@ -8,6 +8,8 @@ This board is originally based on schematics I found floating around on VCFED, a
 - Auto disable of turbo-mode during DMA
 - Reset button header
 
+![Rev. 1.2 PCB](pics/TurboXT.png)
+
 ### Disclaimer
 
 I take NO responsibility for what happens if you decide to build and use this card. Your computer might crash, catch fire or be destroyed in other nasty ways.
@@ -34,9 +36,15 @@ These are optional but highly recommended to provide an additional source of pow
 There are many connection points you can use (VCC/GND legs of another IC for example), but along the side of the XT power connector
 there are two empty resistor footprints on my board that were perfect for the connection.
 
-**Check continuity with a multimeter!!!***
+![Installed board](pics/installed_board.jpg)
 
-# Caveats
+**Check continuity with a multimeter!!!**
+
+# Known issues and caveats 
+
+- The board sits on top of (but should not make contact with) the 8088 and 8087. These can get hot, add a fan or something to keep them cooler.
+- Some CMOS variants of the 8284 do not drive the OSC signal when the F/C pin is high. This is required for this board to work. I tested mine with the original Intel 8284.
+- The components on top of the board could cause some clearance issues with cards installed in slot 8. Some redesigning is required to address this.
 
 ## Bill of Materials
 
